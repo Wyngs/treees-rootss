@@ -11,33 +11,50 @@
         android:id="@+id/waitlist"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:clipToPadding="false"
         android:paddingVertical="8dp"
         app:layout_constraintBottom_toTopOf="@+id/finalList"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewMapButton" />
+        app:layout_constraintTop_toBottomOf="@+id/redrawButton" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/viewMapButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="View on Map"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:backgroundTint="@color/dodo_maroon"
         android:textColor="@android:color/white"
-        app:cornerRadius="12dp" />
+        app:backgroundTint="@color/dodo_maroon"
+        app:cornerRadius="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/redrawButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:text="Redraw"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/dodo_maroon"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/downloadCSV"
+        app:layout_constraintStart_toEndOf="@+id/viewMapButton"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/downloadCSV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="Download as CSV"
         android:textColor="@android:color/white"
         app:backgroundTint="@color/dodo_maroon"
